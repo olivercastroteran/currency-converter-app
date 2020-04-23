@@ -23,7 +23,9 @@ body {
   /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+  min-height: 100vh;
+  */
 }
 
 h1 {
@@ -37,6 +39,8 @@ h1 {
 
 .sign {
   font-size: 3rem;
+  margin-bottom: 0.5rem;
+  margin-left: -25%;
 }
 
 .currency-row input,
@@ -56,4 +60,9 @@ h1 {
 .currency-row input:focus,
 .currency-row select:focus {
   outline: none;
+  border: 1px solid #2ecc71;
+}
+
+.currency-row select:active {
+  color: #34495e;
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 
-const CurrencyRow = () => {
+const CurrencyRow = ({ currencyOptions }) => {
+  const optionsList = currencyOptions.map((opt) => (
+    <option value={opt}>{opt}</option>
+  ));
   return (
     <div className="currency-row">
       <input type="number" />
-      <select>
-        <option value="Hi">Hi</option>
-      </select>
+      <select>{optionsList}</select>
     </div>
   );
 };
